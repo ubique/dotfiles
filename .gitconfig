@@ -1,19 +1,19 @@
 [user]
-	name = Dmitry Banschikov
-	email = me@ubique.spb.ru
+    name = Dmitry Banschikov
+    email = me@ubique.spb.ru
 
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore_global
+    editor = vim
+    excludesfile = ~/.gitignore_global
 
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 
 [alias]
-	co = checkout
-	ci = commit
-	st = status
+    co = checkout
+    ci = commit
+    st = status
     br = branch
 
 [color]
-	ui = auto
+    ui = auto
