@@ -1,0 +1,64 @@
+# IMAP settings
+set spoolfile="imaps://login:password@mail.example.com"
+set folder="imaps://login@mail.example.com"
+set record="=Sent"
+set postponed="=Drafts"
+set ssl_starttls=yes
+set ssl_force_tls=yes
+set imap_check_subscribed
+set mail_check=60
+set auto_tag
+
+# Editor settings
+set editor="vim '+set tw=65'"
+
+# SMTP settings
+set smtp_url=smtp://login@mail.example.com:25/
+set smtp_pass="password"
+set realname="Dmitry Banschikov"
+set from="d.banschikov@mail.example.com"
+set use_from=yes
+set use_envelope_from=yes
+
+set signature="~/.signature"
+
+# S/MIME settings
+set certificate_file="~/.muttstuff/certs/ca-certificates.crt"
+set smime_is_default
+set smime_timeout=300
+set crypt_autosign = yes
+set crypt_replysign = yes
+set crypt_replyencrypt = no
+set crypt_replysignencrypted = no
+set crypt_verify_sig = yes
+set smime_ca_location="/etc/ssl/certs/ca-certificates.crt"
+set smime_certificates="~/.smime/certificates"
+set smime_keys="~/.smime/keys"
+set smime_sign_as=beb8c944.3
+set query_command = "~/.muttstuff/mutt-ldap.pl '%s'"
+
+# MIME
+set mime_forward=yes
+set mime_forward_rest=yes
+
+#Macro
+macro index M "T.*\n;WN" "Mark all messages as read"
+macro index,pager B '<enter-command>toggle sidebar_visible<enter>'
+# mailbox jump
+#macro index gi "<change-folder>=INBOX<enter>" "Go to Inbox"
+#macro index gs "<change-folder>=Sent<enter>" "Go to Sent"
+#macro index gt "<change-folder>=Trash<enter>" "Go to Trash"
+#mailboxes =INBOX =Sent =Trash =Drafts =bugtrack =lists/piter =lists/talks =lists/staff =lists/esuite =unix-repo =testing-others
+
+# Key bindings
+bind index   \Cr      imap-fetch-mail
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+# Color schemes
+color index yellow default ~N
+
+# Caching
+set message_cachedir = "~/.muttstuff/messagesCache"
+set header_cache = "~/.muttstuff/headerCache"
