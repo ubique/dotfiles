@@ -63,7 +63,7 @@ nmap K :Man <cword><CR>
 let g:alternateExtensions_cpp = "inc,h,H,HPP,hpp,hh"
 let g:alternateExtensions_cxx = "inc,h,H,HPP,hpp,hh"
 let g:alternateExtensions_hh = "cpp,cxx,cc"
-let g:alternateExtensions_h = "rl"
+let g:alternateExtensions_h = "c,cpp,cxx,ccrl"
 let g:alternateExtensions_rl = "h"
 map <F7> :A<cr>
 
