@@ -50,6 +50,11 @@ match NearLength /\%93v.\+/
 highlight ExtraWhitespace ctermbg=brown guibg=red
 match ExtraWhitespace /\s\+$/
 
+set noautoindent
+set nosmartindent
+set nocindent
+filetype indent off
+
 map <F4> :set invnumber<CR>
 map <F6> :setlocal spell! spelllang=en_us<cr>
 nmap K :Man <cword><CR>
