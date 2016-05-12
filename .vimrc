@@ -60,7 +60,7 @@ map <F6> :setlocal spell! spelllang=en_us<cr>
 nmap K :Man <cword><CR>
 
 " a.vim
-let g:alternateExtensions_cpp = "inc,h,H,HPP,hpp,hh"
+let g:alternateExtensions_cpp = "h,H,HPP,hpp,hh"
 let g:alternateExtensions_cxx = "inc,h,H,HPP,hpp,hh"
 let g:alternateExtensions_hh = "cpp,cxx,cc"
 let g:alternateExtensions_h = "c,cpp,cxx,ccrl"
