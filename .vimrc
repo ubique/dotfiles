@@ -14,7 +14,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'kana/vim-operator-user'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Bundle 'uarun/vim-protobuf'
+Plugin 'uarun/vim-protobuf'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
