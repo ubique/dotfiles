@@ -55,6 +55,8 @@ set nosmartindent
 set nocindent
 filetype indent off
 
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 map <F4> :set invnumber<CR>
 map <F6> :setlocal spell! spelllang=en_us<cr>
 nmap K :Man <cword><CR>
