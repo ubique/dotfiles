@@ -15,6 +15,9 @@ Plugin 'kana/vim-operator-user'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'uarun/vim-protobuf'
+Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -65,7 +68,7 @@ nmap K :Man <cword><CR>
 let g:alternateExtensions_cpp = "h,H,HPP,hpp,hh"
 let g:alternateExtensions_cxx = "inc,h,H,HPP,hpp,hh"
 let g:alternateExtensions_hh = "cpp,cxx,cc"
-let g:alternateExtensions_h = "c,cpp,cxx,ccrl"
+let g:alternateExtensions_h = "c,cpp,cxx,cc,rl"
 let g:alternateExtensions_rl = "h"
 map <F7> :A<cr>
 
@@ -77,7 +80,7 @@ let g:tagbar_width = 50
 let g:tagbar_sort  = 1
 
 " vim-clang-format
-let g:clang_format#command = "/usr/bin/clang-format-3.6"
+let g:clang_format#command = "/usr/bin/clang-format"
 map <C-K> <Plug>(operator-clang-format)
 
 " vim-cpp-enhanced-hightlith
