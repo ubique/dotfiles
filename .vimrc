@@ -18,6 +18,7 @@ Plugin 'uarun/vim-protobuf'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-utils/vim-man'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,7 +65,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 map <F4> :set invnumber<CR>
 map <F6> :setlocal spell! spelllang=en_us<cr>
-nmap K :Man <cword><CR>
+nmap K :Man <C-R><C-W><CR>
 
 " a.vim
 let g:alternateExtensions_cpp = "h,H,HPP,hpp,hh"
