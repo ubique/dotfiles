@@ -43,6 +43,8 @@ set modeline
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set directory=~/.vim/tmp//
+set backupdir=~/.vim/tmp//
 
 highlight NearLength ctermbg=magenta ctermfg=white guibg=#592959
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
