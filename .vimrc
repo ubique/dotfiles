@@ -88,3 +88,6 @@ map <C-K> <Plug>(operator-clang-format)
 
 " vim-cpp-enhanced-hightlith
 let g:cpp_class_scope_highlight = 1
+
+set exrc
+set secure
