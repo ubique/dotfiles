@@ -91,3 +91,6 @@ let g:cpp_class_scope_highlight = 1
 
 set exrc
 set secure
+
+" YCM
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
