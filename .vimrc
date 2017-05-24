@@ -19,6 +19,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-utils/vim-man'
+Plugin 'vim-scripts/Conque-GDB'
+Plugin 'wincent/command-t'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -94,3 +96,6 @@ set secure
 
 " YCM
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
+
+" CommandT
+nnoremap <leader>o :CommandT <CR>
