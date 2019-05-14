@@ -1,6 +1,7 @@
 [user]
     name = Dmitry Banschikov
     email = me@ubique.spb.ru
+    signingkey = B8A82C4B452F5D74D8ABC382FF88715152A4FD1B
 
 [core]
     editor = vim
@@ -17,3 +18,13 @@
 
 [color]
     ui = auto
+
+[credential]
+    helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+
+[log]
+    decorate = true
+    showSignature = true
+
+[commit]
+    gpgSign = true
