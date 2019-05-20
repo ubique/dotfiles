@@ -16,13 +16,14 @@ Plugin 'rhysd/vim-clang-format'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'uarun/vim-protobuf'
 Plugin 'vim-airline/vim-airline'
+Plugin 'enricobacis/vim-airline-clock'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-utils/vim-man'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+filetype plugin on           " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -49,8 +50,8 @@ highlight NearLength ctermbg=magenta ctermfg=white guibg=#592959
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " Match characters after position 78; set highlight to be magenta
 " Second match characters after position 80; set highlight to be red
-match NearLength /\%93v.\+/
-2match OverLength /\%95v.\+/
+match NearLength /\%158v.\+/
+2match OverLength /\%160v.\+/
 highlight ExtraWhitespace ctermbg=brown guibg=red
 match ExtraWhitespace /\s\+$/
 
@@ -63,7 +64,16 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 map <F4> :set invnumber<CR>
 map <F6> :setlocal spell! spelllang=en_us<cr>
+map <F9> :YcmCompleter FixIt<CR>
 nmap K :Man <C-R><C-W><CR>
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_always_populate_location_list = 1
+let g:ycm_semantic_triggers = { 'cpp': [ 're!.' ] }
+let g:ycm_add_preview_to_completeopt = 1
+nnoremap gl :YcmCompleter GoToDeclaration<CR>
+nnoremap gf :YcmCompleter GoToDefinition<CR>
+nnoremap ge :lnext<CR>
+
 
 " a.vim
 let g:alternateExtensions_cpp = "h,H,HPP,hpp,hh"
