@@ -1,45 +1,49 @@
 # IMAP settings
-set spoolfile="imaps://login:password@mail.example.com"
-set folder="imaps://login@mail.example.com"
+set imap_authenticators="oauthbearer"
+set imap_oauth_refresh_command="/home/dbanschikov/wrk/mail/oauth2tool.sh me@ubique.spb.ru"
+set spoolfile="imaps://me@ubique.spb.ru@imap.gmail.com"
+set folder="imaps://me@ubique.spb.ru@imap.gmail.com"
 set record="=Sent"
 set postponed="=Drafts"
 set ssl_starttls=yes
 set ssl_force_tls=yes
 set imap_check_subscribed
-set mail_check=60
+set mail_check=300
 set auto_tag
+set sort=threads
 
 # Editor settings
 set editor="vim '+set tw=65'"
 
 # SMTP settings
-set smtp_url=smtp://login@mail.example.com:25/
-set smtp_pass="password"
-set realname="Dmitry Banschikov"
-set from="d.banschikov@mail.example.com"
+set sendmail="/usr/bin/msmtp"
+set realname="Dmitrii Banshchikov"
+set from="me@ubique.spb.ru"
 set use_from=yes
 set use_envelope_from=yes
 
 set signature="~/.signature"
 
 # S/MIME settings
-set certificate_file="~/.muttstuff/certs/ca-certificates.crt"
-set smime_is_default
-set smime_timeout=300
-set crypt_autosign = yes
-set crypt_replysign = yes
-set crypt_replyencrypt = no
-set crypt_replysignencrypted = no
-set crypt_verify_sig = yes
-set smime_ca_location="/etc/ssl/certs/ca-certificates.crt"
-set smime_certificates="~/.smime/certificates"
-set smime_keys="~/.smime/keys"
-set smime_sign_as=beb8c944.3
-set query_command = "~/.muttstuff/mutt-ldap.pl '%s'"
+#set certificate_file="~/.muttstuff/certs/ca-certificates.crt"
+#set smime_is_default
+#set smime_timeout=300
+#set crypt_autosign = yes
+#set crypt_replysign = yes
+#set crypt_replyencrypt = no
+#set crypt_replysignencrypted = no
+#set crypt_verify_sig = yes
+#set smime_ca_location="/etc/ssl/certs/ca-certificates.crt"
+#set smime_certificates="~/.smime/certificates"
+#set smime_keys="~/.smime/keys"
+#set smime_sign_as=beb8c944.3
+#set query_command = "~/.muttstuff/mutt-ldap.pl '%s'"
 
 # MIME
 set mime_forward=yes
 set mime_forward_rest=yes
+
+set sidebar_width=20
 
 #Macro
 macro index M "T.*\n;WN" "Mark all messages as read"
