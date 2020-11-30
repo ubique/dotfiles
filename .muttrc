@@ -1,6 +1,6 @@
 # IMAP settings
 set imap_authenticators="oauthbearer"
-set imap_oauth_refresh_command="/home/dbanschikov/wrk/mail/oauth2tool.sh me@ubique.spb.ru"
+set imap_oauth_refresh_command="/home/dbanschikov/git/dotfiles/oauth2tool.sh me@ubique.spb.ru"
 set spoolfile="imaps://me@ubique.spb.ru@imap.gmail.com"
 set folder="imaps://me@ubique.spb.ru@imap.gmail.com"
 set record="=Sent"
