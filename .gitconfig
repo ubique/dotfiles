@@ -1,7 +1,6 @@
 [user]
-    name = Dmitry Banschikov
+    name = Dmitrii Banshchikov
     email = me@ubique.spb.ru
-    signingkey = B8A82C4B452F5D74D8ABC382FF88715152A4FD1B
 
 [core]
     editor = vim
@@ -27,4 +26,4 @@
     showSignature = true
 
 [commit]
-    gpgSign = true
+    gpgSign = false
