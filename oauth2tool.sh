@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Joseph Harriott - Sun 04 Oct 2020
 
