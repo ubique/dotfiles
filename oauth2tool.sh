@@ -57,7 +57,7 @@ handle=$1  # for use in parameter expansions
 
 get_access_token() {
     # $GNULE  should point to the directory that contains your local copy of  oauth2.py
-    GNULE=/home/dbanschikov/git/gmail-oauth2-tools/python/
+    GNULE=${HOME}/git/gmail-oauth2-tools/python/
 
     { IFS= read -r tokenline && IFS= read -r expireline; } < \
     <(python2 $GNULE/oauth2.py --user=${!1} \
