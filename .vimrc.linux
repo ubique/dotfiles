@@ -54,8 +54,8 @@ highlight NearLength ctermbg=magenta ctermfg=white guibg=#592959
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " Match characters after position 78; set highlight to be magenta
 " Second match characters after position 80; set highlight to be red
-match NearLength /\%93v.\+/
-2match OverLength /\%95v.\+/
+match NearLength /\%98v.\+/
+match OverLength /\%100v.\+/
 highlight ExtraWhitespace ctermbg=brown guibg=red
 match ExtraWhitespace /\s\+$/
 
@@ -100,3 +100,5 @@ nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
 " CommandT
 nnoremap <leader>o :CommandT <CR>
+
+let g:ycm_extra_conf_globlist = ['~/wrk/*','!~/*']
