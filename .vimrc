@@ -62,6 +62,7 @@ set noautoindent
 set nosmartindent
 set nocindent
 filetype indent off
+:set wildmode=list:longest,full
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
